@@ -1,0 +1,60 @@
+1)  Welcome User
+Get the first name and last name from the user using the prompt box and display a welcome message that says “Hello Parvez Ansari”
+
+
+
+2) Compare Strings
+Get two values from the user ‘password’ and ‘confirm password’  using the prompt box and display a message “Password validated” if both the values match else display the message “Password do not match”
+
+
+function compar (a,b) { 
+ password = prompt('password', '');
+ confirmPass = prompt('confirm password', '');
+if( +password === +confirmPass ) {
+ return document.write(`Password validated`);
+} 
+return document.write(`Password do not match`);
+}
+compar();
+
+
+3) Calculate the length of the string
+Get an input from the user using the prompt box and display the length of the string.
+e.g “Parvez Ansari” should output will be 13. 
+
+
+
+
+
+
+4) Reverse the string
+Get an input from the user using the prompt box and reverse the string.
+e.g “Parvez” should return “zevrap”.  
+
+x.split('').reverse().join('');
+
+5) Create a function called DrEvil. It should take a single argument, an amount, and return '<amount> dollars', except it will add '(pinky)' at the end if the amount is 1 million. For example:
+
+  DrEvil(10): 10 dollars
+  DrEvil(1000000): 1000000 dollars (pinky)
+function dollar (number) { 
+if((number / 1000000) > 1 ){
+ return number + 'dollars (pinky)';
+}
+ return number + 'dollars';
+};
+
+
+6) Create a function called mixUp. It should take in two strings, and return the concatenation of the two strings (separated by a space) slicing out and swapping the first 2 characters of each. You can assume that the strings are at least 2 characters long. For example:
+
+  mixUp('mix', pod'): 'pox mid'  +
+  mixUp('dog', 'dinner'): 'dig donner'
+function mixUp(e,a) {
+const f = e[0] + e[1] + a.slice(2);
+const z = a[0] + a[1] + e.slice(2);
+return `${z} , ${f}`;
+  
+}
+const result = mixUp('mix', 'aaa');
+console.log(result);
+
