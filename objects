@@ -22,3 +22,11 @@ obj  = {fullName: "fds fds", age: 5}
 property = "age"
 return true/false
 return 5;
+
+function checkPropInObj(e){ 
+   key = 'age';
+ const x = key in e;
+    return x;
+}
+obj  = {fullName: "fds fds", age: 5};
+checkPropInObj(obj);
