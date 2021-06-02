@@ -28,11 +28,16 @@ ________________________________________________________________________
 
 3) Calculate the length of the string
 Get an input from the user using the prompt box and display the length of the string.
-e.g “Parvez Ansari” should output will be 13. 
+e.g “Parvez Ansari” should output will be 13.
 
+function lenghStr (e) { 
+const x = e.length;
+return x;
+}
+const result = lenghStr(prompt(''));
+console.log(result);
 
-
-
+____________________________________________________________
 
 
 4) Reverse the string
@@ -40,6 +45,8 @@ Get an input from the user using the prompt box and reverse the string.
 e.g “Parvez” should return “zevrap”.  
 
 x.split('').reverse().join('');
+
+______________________________________________________________
 
 5) Create a function called DrEvil. It should take a single argument, an amount, and return '<amount> dollars', except it will add '(pinky)' at the end if the amount is 1 million. For example:
 
@@ -52,6 +59,7 @@ if((number / 1000000) > 1 ){
  return number + 'dollars';
 };
 
+____________________________________________
 
 6) Create a function called mixUp. It should take in two strings, and return the concatenation of the two strings (separated by a space) slicing out and swapping the first 2 characters of each. You can assume that the strings are at least 2 characters long. For example:
 
@@ -65,4 +73,4 @@ return `${z} , ${f}`;
 }
 const result = mixUp('mix', 'aaa');
 console.log(result);
-
+____________________________________________________
