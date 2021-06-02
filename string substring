@@ -13,16 +13,17 @@ ______________________________________________________________________
 2) Compare Strings
 Get two values from the user ‘password’ and ‘confirm password’  using the prompt box and display a message “Password validated” if both the values match else display the message “Password do not match”
 
-
 function compar (a,b) { 
- password = prompt('password', '');
- confirmPass = prompt('confirm password', '');
+ const  password = prompt('password', '');
+ const  confirmPass = prompt('confirm password', '');
 if( +password === +confirmPass ) {
- return document.write(`Password validated`);
+ return `Password validated`;
 } 
-return document.write(`Password do not match`);
+return `Password do not match`;
 }
-compar();
+const result = compar();
+console.log(result);
+________________________________________________________________________
 
 
 3) Calculate the length of the string
