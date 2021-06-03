@@ -128,3 +128,15 @@ if (e.indexOf('not') != -1){
 return e;
 }
 notBad('This movie is not so bad!');
+
+//or 
+
+function notBad(e){ 
+  const a = e.indexOf('not');
+  const b = e.indexOf('bad');
+ if (a !== -1 && b !== -1 && b > a ){
+  return e.slice(0, a) + 'good';
+ }
+ return e;
+ }
+notBad('This movie is not so bad!');
