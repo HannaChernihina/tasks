@@ -75,6 +75,17 @@ return `${z} , ${f}`;
 }
 const result = mixUp('mix', 'aaa');
 console.log(result);
+
+// or
+
+function mixUp(e,a) {
+const f = e.slice(0, 2) + a.slice(2);
+const z = a.slice(0, 2) + e.slice(2);
+return `${z} , ${f}`;
+  
+}
+const result = mixUp('mix', 'pod');
+console.log(result);
 // ____________________________________________________
 
 // 7) Create a function called verbing. It should take a single argument, a string. If its length is at least 3, it should add 'ing' to its end, unless it already ends in 'ing', in which case it should add 'ly' instead. If the string length is less than 3, it should leave it unchanged. For example:
