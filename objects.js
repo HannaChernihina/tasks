@@ -9,9 +9,7 @@ function getUserInfo(e){
 return user['age'];
 }
 
-const user = {
-               age: 25,
-              };
+const user = {age: 25, };
 getUserInfo(user);
 
 // _______________________________________________________________________________________
