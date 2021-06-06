@@ -4,8 +4,11 @@
 // console.log(is_array([1, 2, 4, 0]));
 // false
 // true
-
-
+function checkIsArray(input){
+  return Array.isArray(input)
+}
+checkIsArray('w3resource');
+checkIsArray([1, 2, 4, 0]);
 
 // _____________________________________________________________________
 // 2. Write a JavaScript function to clone an array. Go to the editor
@@ -14,7 +17,10 @@
 // console.log(array_Clone([1, 2, [4, 0]]));
 // [1, 2, 4, 0]
 // [1, 2, [4, 0]]
-
+function copyArray(arr){
+  return arr.copyWithin(0)
+}
+console.log(copyArray([1, 5, 4, 0]))
 
 
 // _______________________________________________________________________
