@@ -4,7 +4,7 @@
 // console.log(is_array([1, 2, 4, 0]));
 // false
 // true
-function checkIsArray(input){
+const checkIsArray = function(input){
   return Array.isArray(input)
 }
 checkIsArray('w3resource');
@@ -17,7 +17,7 @@ checkIsArray([1, 2, 4, 0]);
 // console.log(array_Clone([1, 2, [4, 0]]));
 // [1, 2, 4, 0]
 // [1, 2, [4, 0]]
-function copyArray(arr){
+const copyArray = function(arr){
   return arr.copyWithin(0)
 }
 console.log(copyArray([1, 5, 4, 0]))
@@ -37,7 +37,7 @@ console.log(copyArray([1, 5, 4, 0]))
 // [7, 9, 0]
 // [7, 9, 0, -2]
 // []
-function first(arr, n){
+const first = function(arr, n){
     if(n == null ){
     return arr[0]
     }
