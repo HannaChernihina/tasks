@@ -56,7 +56,15 @@ console.log(first([7, 9, 0, -2]));
 // -2
 // [9, 0, -2]
 // [7, 9, 0, -2]
+function last(arr, n){
+    if(n == null ){
+    return arr[arr.length - 1];
+    }
+    let x = arr.length - n;
+    return arr.splice(x , n)
+}
 
+console.log(last([7, 9, 0, -2],6));   ????
 
 
 
