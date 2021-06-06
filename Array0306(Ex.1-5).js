@@ -76,6 +76,7 @@ console.log(last([7, 9, 0, -2],6));   ????
 // "Red,Green,White,Black"
 // "Red,Green,White,Black"
 // "Red+Green+White+Black"
+const myColor = ["Red", "Green", "White", "Black"];
   
 const joinArray = function(arr){
     return arr.join()
@@ -85,7 +86,6 @@ const joinArray = function(arr){
 const joinArray2 = function(arr){
     return arr.join('+')
   }
-const myColor = ["Red", "Green", "White", "Black"];
 joinArray2(myColor); //"Red+Green+White+Black"
 
   
