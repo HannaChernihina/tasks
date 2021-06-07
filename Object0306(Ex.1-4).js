@@ -5,7 +5,15 @@
 // sclass : "VI",
 // rollno : 12 };
 // Sample Output: name,sclass,rollno
+const outputKey = function(obj){
+   return Object.keys(obj).join()
+}
+const student = {
+name : "David Rayy",
+sclass : "VI",
+rollno : 12 };
 
+outputKey(student);
 
 
 // ___________________________________________________________________________________________________
