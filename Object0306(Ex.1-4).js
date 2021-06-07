@@ -23,7 +23,20 @@ outputKey(student);
 // name : "David Rayy",
 // sclass : "VI",
 // rollno : 12 };
+const student = {
+name : "David Rayy",
+sclass : "VI",
+rollno : 12 };
 
+function delProperty(obj){
+    const key = 'rollno';
+    for (key in obj){
+        delete obj[key]
+       
+    }
+  return obj;
+   
+}   ???
 
 
 
