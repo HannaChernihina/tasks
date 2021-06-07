@@ -60,11 +60,14 @@ function last(arr, n){
     if(n == null ){
     return arr[arr.length - 1];
     }
+    if ( n > arr.length ){
+       return arr;
+    }
     let x = arr.length - n;
-    return arr.splice(x , n)
+    return arr.slice(x , n)
 }
 
-console.log(last([7, 9, 0, -2],6));   ????
+console.log(last([7, 9, 0, -2],6));
 
   
 
