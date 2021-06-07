@@ -28,15 +28,11 @@ name : "David Rayy",
 sclass : "VI",
 rollno : 12 };
 
-function delProperty(obj){
-    const key = 'rollno';
-    for (key in obj){
+function delProperty(obj, key){
         delete obj[key]
-       
-    }
-  return obj;
-   
-}   ???
+  return obj;  
+}
+delProperty(student, 'rollno')
 
 
 
