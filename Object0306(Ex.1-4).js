@@ -47,6 +47,18 @@ const lengthObject function(obj) {
     return Object.keys(obj).length;
 }
 
+// or
+
+function lenghtObject(obj){
+    let counter = 0;
+    for ( key in obj ){ 
+        
+      counter++;
+    }
+console.log(counter)
+}
+
+
 
 // ___________________________________________________________________________________________________
 // 4. Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books. Go to the editor
