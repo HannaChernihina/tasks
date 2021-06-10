@@ -43,6 +43,9 @@ delProperty(student, 'rollno')
 // name : "David Rayy",
 // sclass : "VI",
 // rollno : 12 };
+const lengthObject function(obj) { 
+    return Object.keys(obj).length;
+}
 
 
 // ___________________________________________________________________________________________________
