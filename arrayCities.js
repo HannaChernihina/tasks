@@ -65,4 +65,21 @@ return arr.filter((item) => {return item.population % n == 0} )
 
 city(cities, 4)
 
+// 3. вывести имена городов в которых население кратное n
+function city(arr, n){
+ return arr.filter((item) => {
+if (item.population % n == 0) {
+   return item.name;    
+}
+return n;
+} )
 
+}
+
+4. 
+function findCityPoppulation(arr){
+   return arr.find( (item) => {return item.population === 685628} );
+}
+
+findCityPoppulation(cities)
+// {name: "Libas", population: 685628}
