@@ -49,3 +49,6 @@ let cities = [{"name":"Simpang","population":1807996},
 {"name":"Amherstburg","population":993042},
 {"name":"Longlou","population":1787909},
 {"name":"Ketian","population":732402}];
+
+
+// 1. есть ли какой-то елемент более или раверн 1 100 000
