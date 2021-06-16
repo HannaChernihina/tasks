@@ -58,4 +58,11 @@ function populationNum(arr){
 populationNum(cities)
 true
 
+// 2. вывести обьекты в которых численность населения делится на переданный параметр
+function city(arr, n){
+return arr.filter((item) => {return item.population % n == 0} )
+}
+
+city(cities, 4)
+
 
