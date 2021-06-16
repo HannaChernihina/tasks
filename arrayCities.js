@@ -52,3 +52,8 @@ let cities = [{"name":"Simpang","population":1807996},
 
 
 // 1. есть ли какой-то елемент более или раверн 1 100 000
+function populationNum(arr){
+   return arr.some( item => item.population == 1100000  );
+}
+
+populationNum(cities)
