@@ -66,14 +66,18 @@ return arr.filter((item) => {return item.population % n == 0} )
 city(cities, 4)
 
 // 3. вывести имена городов в которых население кратное n
-function city(arr, n){
- return arr.filter((item) => {
-if (item.population % n == 0) {
-   return item.name;    
-}
-return n;
-} )
+// function city(arr, n){
+//  return arr.filter((item) => {
+// if (item.population % n == 0) {
+//    return item.name;    
+// }
+// return n;
+// } )
+// }
 
+function city(arr, n){
+let x = arr.filter((item) => {return item.population % n == 0} )
+return x.map((item2) => { return item2.name }  )
 }
 
 4. 
