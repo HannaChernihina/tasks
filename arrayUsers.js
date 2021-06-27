@@ -49,5 +49,17 @@ let users = [{"id":1,"firstName":"Harriette","userName":"hgordongiles0"},
 {"id":49,"firstName":"Tatiania","userName":"thuggett1c"},
 {"id":50,"firstName":"Bea","userName":"rwarrillow1d"}];
 
+// 1. add age and sort by age
+// If firstName length > 7 add {“tooOld”: true}
+// If firstName length < 7 add {“tooYoung”: true}
+function addAge(arr){
+let x =  arr.filter(item =>  {return item.firstName.length > 7} );
+x.forEach(itemChild => {return itemChild.push('"tooOld": true') } );
+return x;
+}
+
+// 2. add access rights, display all who are admin ( userName )
+// 3. firstName по алфавиту 
+// 4. вывести количкство админов , менеджеров
 
 
