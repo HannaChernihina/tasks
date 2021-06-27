@@ -54,7 +54,7 @@ let users = [{"id":1,"firstName":"Harriette","userName":"hgordongiles0"},
 // If firstName length < 7 add {“tooYoung”: true}
 function addAge(arr){
 let x =  arr.filter(item =>  {return item.firstName.length > 7} );
-x.forEach(itemChild => {return itemChild.push('"tooOld": true') } );
+ x.forEach(obj => {return obj.tooOld = true } );
 return x;
 }
 
