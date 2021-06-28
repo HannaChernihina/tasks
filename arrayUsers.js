@@ -59,6 +59,13 @@ let users = [{"id":1,"firstName":"Harriette","userName":"hgordongiles0"},
 // }
 
 
+
+// function addAge(arr){
+// let x =  arr.filter(item =>  {return item.firstName.length > 7} );
+// let arr1 = x.forEach(obj => {return obj.tooOld = true } );
+// return x
+// }
+
 function addAge(arr){
 let x =  arr.filter(item =>  {return item.firstName.length > 7} );
 let arr1 = x.forEach(obj => {return obj.tooOld = true } );
