@@ -97,18 +97,19 @@ adminOld(usersAdmin);
 
 // 2. for those users who have the value tooOld, give the admin rights admin = true. And output their userName
 function addAdmin(arr){
-  let x = arr.forEach((item) => { 
- if(item.tooOld){
- return item.admin = true ;
-} 
- return item.admin = false; 
-
- });
-return arr.map((item) => {if(item.admin === true){ 
-return `Hi, ${item.userName} `
-}
-return item.userName;
- 
+  return arr.map((item) => {
+    if(item.tooOld){
+      item.admin = true ;
+    } else {
+      item.admin = false;
+    }
+    
+    if(item.admin = true){ 
+     `Hi, ${item.userName} `;
+      } else {
+     item.userName;
+      }
+return item;
 });
 }
 
