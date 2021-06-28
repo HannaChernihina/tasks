@@ -76,7 +76,22 @@ function adminOld(arr){
 adminOld(usersAdmin);
 // 5
 
+
+
 // 2. add access rights, display all who are admin ( userName )
+function addAdmin(arr){
+  let x = arr.forEach( (item) => { 
+ if(item.tooOld){
+ return item.admin = true ;
+} else {
+ return item.admin = false; 
+}
+ });
+return arr;
+}
+
+
+
 // 3. firstName по алфавиту 
 // 4. вывести количкство админов , менеджеров
 
