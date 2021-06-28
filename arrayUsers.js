@@ -83,11 +83,16 @@ function addAdmin(arr){
   let x = arr.forEach((item) => { 
  if(item.tooOld){
  return item.admin = true ;
-} else {
+} 
  return item.admin = false; 
-}
+
  });
-return arr.map((item) => {if(item.admin === true){ return `Hi, ${item.userName} `} });
+return arr.map((item) => {if(item.admin === true){ 
+return `Hi, ${item.userName} `
+}
+return item.userName;
+ 
+});
 }
 
 
