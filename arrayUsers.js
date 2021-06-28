@@ -53,13 +53,32 @@ let users = [{"id":1,"firstName":"Harriette","userName":"hgordongiles0"},
 // If firstName length > 7 add {“tooOld”: true}
 // If firstName length < 7 add {“tooYoung”: true}
 
+// function addAge(arr){
+// let x =  arr.filter(item =>  {return item.firstName.length > 7} );
+//     x.forEach(obj => {return obj.tooOld = true } );
+// let y = arr.filter(item =>  {return item.firstName.length < 7} );
+// y.forEach(obj => {return obj.tooYoung = true } );
+// return x.concat(y)
+// }
+
 function addAge(arr){
-let x =  arr.filter(item =>  {return item.firstName.length > 7} );
-    x.forEach(obj => {return obj.tooOld = true } );
-let y = arr.filter(item =>  {return item.firstName.length < 7} );
-y.forEach(obj => {return obj.tooYoung = true } );
-return x.concat(y)
+return arr.map((item) => {
+    console.log(item.userName.length)
+    if(item.userName.length > 7){
+        return item.tooOld = true;
+    }
+     if (item.userName.length < 7){
+        
+        return item.tooYoung = true;
+    }   
+});
 }
+
+
+
+
+
+
 
 // 1. посчитать tooOld 
 let usersAdmin = addAge(users);
