@@ -67,11 +67,14 @@ let usersAdmin = addAge(users);
 function adminOld(arr){
   return arr.reduce( (acc, value) => {
     if(value.tooOld){
-       return acc++;
+       return acc+ 1;
     }
     return acc;
   }, 0);
 }
+
+adminOld(usersAdmin);
+// 5
 
 // 2. add access rights, display all who are admin ( userName )
 // 3. firstName по алфавиту 
