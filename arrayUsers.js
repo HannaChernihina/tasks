@@ -67,7 +67,7 @@ let usersAdmin = addAge(users);
 function adminOld(arr){
   return arr.reduce( (acc, value) => {
     if(value.tooOld){
-       return acc+ 1;
+       return ++acc;   
     }
     return acc;
   }, 0);
