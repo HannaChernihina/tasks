@@ -80,16 +80,15 @@ adminOld(usersAdmin);
 
 // 2. add access rights, display all who are admin ( userName )
 function addAdmin(arr){
-  let x = arr.forEach( (item) => { 
+  let x = arr.forEach((item) => { 
  if(item.tooOld){
  return item.admin = true ;
 } else {
  return item.admin = false; 
 }
  });
-return arr;
+return arr.map((item) => {if(item.admin === true){ return `Hi, ${item.userName} `} });
 }
-
 
 
 // 3. firstName по алфавиту 
