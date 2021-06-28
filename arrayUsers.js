@@ -78,7 +78,7 @@ adminOld(usersAdmin);
 
 
 
-// 2. add access rights, display all who are admin ( userName )
+// 2. for those users who have the value tooOld, give the admin rights admin = true. And output their userName
 function addAdmin(arr){
   let x = arr.forEach((item) => { 
  if(item.tooOld){
