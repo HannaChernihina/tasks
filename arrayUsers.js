@@ -61,6 +61,18 @@ y.forEach(obj => {return obj.tooYoung = true } );
 return x.concat(y)
 }
 
+// 1. посчитать tooOld 
+let usersAdmin = addAge(users);
+
+function adminOld(arr){
+  return arr.reduce( (acc, value) => {
+    if(value.tooOld){
+       return acc++;
+    }
+    return acc;
+  }, 0);
+}
+
 // 2. add access rights, display all who are admin ( userName )
 // 3. firstName по алфавиту 
 // 4. вывести количкство админов , менеджеров
