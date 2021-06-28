@@ -100,16 +100,14 @@ function addAdmin(arr){
   return arr.map((item) => {
     if(item.tooOld){
       item.admin = true ;
-    } else {
+    } else if(item.tooYoung) {
       item.admin = false;
     }
     
     if(item.admin = true){ 
      `Hi, ${item.userName} `;
-      } else {
-     item.userName;
-      }
-return item;
+      } 
+    return item.userName;
 });
 }
 
