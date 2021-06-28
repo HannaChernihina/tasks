@@ -62,16 +62,20 @@ let users = [{"id":1,"firstName":"Harriette","userName":"hgordongiles0"},
 // }
 
 function addAge(arr){
+
 return arr.map((item) => {
-    console.log(item.userName.length)
+    
     if(item.userName.length > 7){
-        return item.tooOld = true;
+         item.tooOld = true;
+
     }
      if (item.userName.length < 7){
         
-        return item.tooYoung = true;
-    }   
+         item.tooYoung = true;
+    } 
+return item;  
 });
+
 }
 
 
