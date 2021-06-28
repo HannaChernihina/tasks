@@ -52,27 +52,13 @@ let users = [{"id":1,"firstName":"Harriette","userName":"hgordongiles0"},
 // 1. add age and sort by age
 // If firstName length > 7 add {“tooOld”: true}
 // If firstName length < 7 add {“tooYoung”: true}
-// function addAge(arr){
-// let x =  arr.filter(item =>  {return item.firstName.length > 7} );
-//  x.forEach(obj => {return obj.tooOld = true } );
-// return x;
-// }
-
-
-
-// function addAge(arr){
-// let x =  arr.filter(item =>  {return item.firstName.length > 7} );
-// let arr1 = x.forEach(obj => {return obj.tooOld = true } );
-// return x
-// }
 
 function addAge(arr){
 let x =  arr.filter(item =>  {return item.firstName.length > 7} );
-let arr1 = x.forEach(obj => {return obj.tooOld = true } );
+    x.forEach(obj => {return obj.tooOld = true } );
 let y = arr.filter(item =>  {return item.firstName.length < 7} );
-let arr2 = y.forEach(obj => {return obj.tooYoung = true } );
-let arr3 = arr1.concat(arr2);
-return arr3;
+y.forEach(obj => {return obj.tooYoung = true } );
+return x.concat(y)
 }
 
 // 2. add access rights, display all who are admin ( userName )
