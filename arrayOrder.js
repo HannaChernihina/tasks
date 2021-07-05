@@ -31,3 +31,11 @@ const products = [{
 //   "name": "Arnoldo",
 //   "price": 90
 // }]}];
+
+
+function Orders(arr, arr2){
+    const x = arr2.map(item2 => return {...item2, item2, item2} );
+     const y =  arr.map(item => return {...item, item, productIds : item2});
+    return y;
+    
+}
