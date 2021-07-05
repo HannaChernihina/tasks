@@ -32,6 +32,23 @@ const products = [{
 //   "price": 90
 // }]}];
 
+function getOrderWithProduct(orders, products){
+    return orders.map(order => {
+       return products.filter(product => { 
+         if(order.productIds == product.id){
+    return;    
+}
+}
+ } );
+ 
+}
+                      
+                      
+
+
+
+
+
 function sortProduct(arr){
     const newArr = [...arr];
     newArr.sort((a, b) => {
