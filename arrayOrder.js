@@ -2,7 +2,7 @@ const Orders = [{"id":1,"productIds":[11, 12, 13, 15],"createdAt":{"$date":"2020
 {"id":2,"productIds":[11, 12, 13],"createdAt":{"$date":"2019-12-29T02:31:52.000Z"}},
 {"id":3,"productIds":[11, 12],"createdAt":{"$date":"2020-07-24T08:49:35.000Z"}},
 {"id":4,"productIds":[12, 13],"createdAt":{"$date":"2020-08-30T13:01:23.000Z"}},
-{"id":5,"productIds":[14, 13, 11],"createdAt":{"$date":"2019-12-03T09:59:33.000Z"}}]
+{"id":5,"productIds":[14, 13, 11],"createdAt":{"$date":"2019-12-03T09:59:33.000Z"}}];
 
 const products = [{
   "id": 11,
@@ -24,10 +24,10 @@ const products = [{
   "id": 15,
   "name": "Stanley",
   "price": 36
-}]
+}];
 
-const  OrdersWithProduct = [{id: …, createdAt: …, products: [{
-  "id": 11,
-  "name": "Arnoldo",
-  "price": 90
-}]}]
+// const  OrdersWithProduct = [{id: …, createdAt: …, products: [{
+//   "id": 11,
+//   "name": "Arnoldo",
+//   "price": 90
+// }]}];
