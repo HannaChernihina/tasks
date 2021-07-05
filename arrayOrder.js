@@ -32,6 +32,33 @@ const products = [{
 //   "price": 90
 // }]}];
 
+function sortProduct(arr){
+    const newArr = [...arr];
+    newArr.sort((a, b) => {
+    
+    let z = a.name.toUpperCase();
+    let x = b.name.toUpperCase();
+    
+    if(z < x ){return -1}
+    if(z > x ){return 1}
+    return 0;
+})
+return newArr;
+  
+ function sortNum(arr){
+    const arr3 = [...arr];
+    arr3.sort((a,b) => {
+       if( a.price < b.price) {return -1}
+       if( a.price > b.price) {return 1}
+    return 0;
+})
+return arr3;
+}
+  
+  
+//   _____
+  
+  
 
 function Orders(arr, arr2){
     const x = arr2.map(item2 => return {...item2, item2, item2} );
