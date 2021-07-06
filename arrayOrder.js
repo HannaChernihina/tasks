@@ -45,17 +45,21 @@ function getOrderWithProduct(orders, products){
                       
 //   ______________________________________________________
                       
-                      function getOrderWithProduct(orders, products){
-const newORder = [...orders];
-const newProduct = [...products];
+function getOrderWithProduct(orders, products){
+  const newORder = [...orders];
+  const newProduct = [...products];
 
-    return newORder.map(order => {
+      return newORder.map(order => {
        return newProduct.filter(product => {
     
-    
-         if(newORder.productIds[0] == newProduct.id){
-    return newORder.concat(newProduct);    
-}
+        for (let i = 0; i < order.productIds.length; i++) {
+            order.productIds[i] 
+            if(order.productIds[i] == newProduct.id){
+                return order.productIds.concat(product);    
+            } 
+        }
+
+         
 }
  )} );
  
