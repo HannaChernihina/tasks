@@ -83,3 +83,25 @@ function Orders(arr, arr2){
     return y;
     
 }
+
+
+
+
+function getOrderWithProduct(orders, products){
+    return orders.map(order => {
+        if(order.isArray()) {
+     const x = order.forEach((childProd) => {return childProd});
+        console.log(x)
+        }
+    
+       return products.filter(product => { 
+       
+         if(orders.productIds == product.id){
+    return;    
+}
+}
+ )});
+ 
+}
+
+
