@@ -43,8 +43,28 @@ function getOrderWithProduct(orders, products){
  
 }
                       
+//   ______________________________________________________
                       
+                      function getOrderWithProduct(orders, products){
+const newORder = [...orders];
+const newProduct = [...products];
 
+    return newORder.map(order => {
+       return newProduct.filter(product => {
+    
+    
+         if(newORder.productIds[0] == newProduct.id){
+    return newORder.concat(newProduct);    
+}
+}
+ )} );
+ 
+}
+  
+  
+  
+  
+//   _______
 
 
 
@@ -103,5 +123,10 @@ function getOrderWithProduct(orders, products){
  )});
  
 }
+
+
+
+
+
 
 
