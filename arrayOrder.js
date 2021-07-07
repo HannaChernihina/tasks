@@ -129,6 +129,15 @@ function getOrderWithProduct(orders, products){
 }
 
 
+// ----------------------------------
+
+function getOrderWithProduct(orders, products){
+     return orders.map((order) => ({...order,  productIds : products.filter((product) => {
+    return order.productIds.find(findId => {
+    return findId === product.id}
+)
+})} ));
+}
 
 
 
