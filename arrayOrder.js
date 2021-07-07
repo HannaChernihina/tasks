@@ -158,3 +158,13 @@ return x;
 }
 
 
+
+
+
+const getOrderWithProduct = function(orders, products){
+     const x = orders.map((order) => ({...order,  products : products.filter((product) => {
+    return order.productIds.includes(product.id)
+})} ))
+x.forEach(id => {return delete id.productIds});
+return x;
+}
