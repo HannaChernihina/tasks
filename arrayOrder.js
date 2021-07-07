@@ -139,7 +139,12 @@ function getOrderWithProduct(orders, products){
 })} ));
 }
 
-
+// -----------------------------------------
+  function getOrderWithProduct(orders, products){
+     return orders.map((order) => ({...order,  productIds : products.filter((product) => {
+    return order.productIds.includes(product.id)
+})} ));
+}
 
 
 
