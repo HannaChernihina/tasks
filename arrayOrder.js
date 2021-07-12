@@ -142,9 +142,6 @@ function getOrderWithProduct(orders, products){
 // -----------------------------------------
 
 
-
-
-
 const getOrderWithProduct = function(orders, products){
      const x = orders.map((order) => ({...order,  products : products.filter((product) => {
     return order.productIds.includes(product.id)
@@ -152,3 +149,18 @@ const getOrderWithProduct = function(orders, products){
 x.forEach(id => {return delete id.productIds});
 return x;
 }
+
+
+// -----------------------------------------
+
+const getOrderWithProduct = function(orders, products){
+    return orders.map(order => {
+            const {productIds, ...orderWithoutProductIds} = order;
+            
+             const filterProducts = products.filter(product => {return orderWithoutProductIds.includes(product.id)} )});
+               
+        return {...order, products: filterProducts};
+
+}
+
+
