@@ -140,22 +140,6 @@ function getOrderWithProduct(orders, products){
 }
 
 // -----------------------------------------
-  function getOrderWithProduct(orders, products){
-     return orders.map((order) => ({...order,  products : products.filter((product) => {
-    return order.productIds.includes(product.id)
-})} ));
-}
-
-
-
-------------------
-function getOrderWithProduct(orders, products){
-     let x = orders.map((order) => ({...order,  products : products.filter((product) => {
-    return order.productIds.includes(product.id)
-})} ))
-x.forEach(id => {return delete id.productIds});
-return x;
-}
 
 
 
