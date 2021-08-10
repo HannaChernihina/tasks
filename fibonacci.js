@@ -24,5 +24,9 @@ factorial(5)
 // факториал чисел из массива
 const arr = [1, 2, 3, 4, 5];
 function getFactorial(arr){
-
+    let factorial = arr.shift();
+    if(arr.length != 0 ){
+        factorial *=  getFactorial(arr); 
+    }   
+    return factorial; 
 }
