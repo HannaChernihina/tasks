@@ -30,3 +30,17 @@ function getFactorial(arr){
     }   
     return factorial; 
 }
+
+
+// ---------------------
+// A: От 1 до n
+// натуральное число n. Выведите все числа от 1 до n.
+
+function numAll(n){
+  if(n == 0) return ;
+    console.log(n)
+  return numAll(n - 1);
+   
+}
+
+
