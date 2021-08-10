@@ -46,4 +46,17 @@ function numAll(n){
 //5. Даны два целых числа A и В (каждое в отдельной строке). 
 // Выведите все числа от A до B включительно, в порядке возрастания, 
 // если A < B, или в порядке убывания в противном случае.
+function num(n, x){
+    if( n == 0) return 0;
+    if( x == 0) return 0;
 
+    if( n < x){
+    console.log(n)
+    return num(n + 1, x)
+    }
+    if(n > x){
+    console.log(x)
+    return num(n, x - 1)
+    }
+
+}
