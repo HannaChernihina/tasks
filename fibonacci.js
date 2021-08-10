@@ -22,5 +22,7 @@ factorial(5)
 
 
 // факториал чисел из массива
-function getFactorial(n){
+const arr = [1, 2, 3, 4, 5];
+function getFactorial(arr){
+
 }
