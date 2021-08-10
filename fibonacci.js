@@ -19,3 +19,6 @@ return n * factorial(n-1);
 }
 factorial(5)
 //120
+
+
+// факториал чисел из массива
