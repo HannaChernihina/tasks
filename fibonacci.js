@@ -22,3 +22,5 @@ factorial(5)
 
 
 // факториал чисел из массива
+function getFactorial(n){
+}
