@@ -43,6 +43,22 @@ function numAll(n){
    
 }
 
+
+
+
+// 5. Вывести числа Фиббоначи от и до того что передадим
+function numFibonacci(n){
+   let arrNew = [0, 1];
+   
+   for(let i = 0; i < arrNew.length; i++){
+     x =   arrNew.push(arrNew[arrNew.length - 1] + (arrNew[arrNew.length - 2] ))
+
+    }
+    return arrNew;
+}
+
+
+
 //5. Даны два целых числа A и В (каждое в отдельной строке). 
 // Выведите все числа от A до B включительно, в порядке возрастания, 
 // если A < B, или в порядке убывания в противном случае.
