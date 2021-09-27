@@ -33,3 +33,49 @@ let b = new B;
 
 console.log(a == b )
 VM819:13 true
+
+
+
+
+
+// --------------------------------------
+
+function getCounter(){
+    let count = 0;
+    return function(){
+        return count++;
+    }
+}
+undefined
+getCounter()
+ƒ (){
+        return count++;
+    }
+getCounter()()
+0
+x()
+2
+x()
+3
+x()
+4
+function getCounter(){
+    let count = 0;
+    return function(){
+        return count++;
+    console.log(count)
+    }
+}
+x()
+5
+function getCounter(){
+    let count = 0;
+    return function(){
+        return count++;
+    
+    }
+}
+x()
+
+
+
