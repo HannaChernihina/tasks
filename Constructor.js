@@ -39,6 +39,10 @@ VM819:13 true
 
 
 // --------------------------------------
+getCounter()()
+или записать и вызвать let x = getCounter();
+x()
+будет считать 1 2 3 и т.д. 
 
 function getCounter(){
     let count = 0;
