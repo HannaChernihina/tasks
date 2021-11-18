@@ -42,6 +42,20 @@ function factorial(num){
     return (num != 1) ? num * factorial(num - 1 ) : num;
 }
 
+// через цикл 
+function factorialTwo(n){
+    let result = 1;
+    for(i = n; i > 1; i--){
+        result *= i;  
+    }
+   return  result;
+}
+
+
+
+
+
+
 
 //3. факториал чисел из массива
 const arr = [1, 2, 3, 4, 5];
