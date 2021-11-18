@@ -31,12 +31,17 @@ fibonacci(5)
 // n! = n * (n - 1) * (n - 2) * ...*1   формула
 // Подсказка: n! можно записать как n * (n-1)! Например: 3! = 3*2! = 3*2*1! = 6
 function factorial(n){
-if(n < 0 ) return n;
-if(n == 1 ) return n;
+if(n < 0 ) return 0;
+if(n == 1 ) return 1;
 return n * factorial(n-1);
 }
 factorial(5)
 //120
+
+function factorial(n){
+if(n < 0 || n == 1 ) return 1;
+return n * factorial(n-1);
+} 
 // или более краткая через тернарный оператор
 function factorial(num){
     return (num != 1) ? num * factorial(num - 1 ) : num;
