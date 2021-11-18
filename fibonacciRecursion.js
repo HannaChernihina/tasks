@@ -37,6 +37,10 @@ return n * factorial(n-1);
 }
 factorial(5)
 //120
+// или 
+function factorial(num){
+    return (num != 1) ? num * factorial(num - 1 ) : num;
+}
 
 
 //3. факториал чисел из массива
