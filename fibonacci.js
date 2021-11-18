@@ -27,7 +27,8 @@ return fibonacci(n-1) + fibonacci(n-2)
 fibonacci(5)
 
 
-//2. факториал числа 
+//2. написать функцию factorial(n), которая возвращает n!, используя рекурсию. 
+// n! = n * (n - 1) * (n - 2) * ...*1   формула
 function factorial(n){
 if(n < 0 ) return
 if(n == 1 ) return n;
