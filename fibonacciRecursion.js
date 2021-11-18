@@ -57,8 +57,7 @@ function factorialize(num) {
   if(num === 0 || num === 1){
     return 1;
   }
-  while(num > 1){
-    num--;
+  while(--num){
     result =num*result;
   }
   return result;
