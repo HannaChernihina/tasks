@@ -37,7 +37,7 @@ return n * factorial(n-1);
 }
 factorial(5)
 //120
-// или 
+// или тоже через рекурсию
 function factorial(num){
     return (num != 1) ? num * factorial(num - 1 ) : num;
 }
