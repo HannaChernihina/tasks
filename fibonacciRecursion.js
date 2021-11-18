@@ -12,8 +12,6 @@
 
 
 
-
-
 // 1. Последовательность чисел Фибоначчи определяется формулой Fn = Fn-1 + Fn-2 
 function fibonacci(n){
 if(n === 0)
@@ -23,15 +21,17 @@ if(n===1)
 return fibonacci(n-1) + fibonacci(n-2)
 
 }
-
 fibonacci(5)
+
+
+
 
 
 //2. написать функцию factorial(n), которая возвращает n!, используя рекурсию. 
 // n! = n * (n - 1) * (n - 2) * ...*1   формула
 // Подсказка: n! можно записать как n * (n-1)! Например: 3! = 3*2! = 3*2*1! = 6
 function factorial(n){
-if(n < 0 ) return
+if(n < 0 ) return n;
 if(n == 1 ) return n;
 return n * factorial(n-1);
 }
