@@ -23,6 +23,15 @@ return fibonacci(n-1) + fibonacci(n-2)
 }
 fibonacci(5)
 
+// через цикл 
+function fib(num){
+        let arr2 = [0, 1]
+    for(let i = 2; i < num ; i++){
+         arr2.push(arr2[arr2.length - 1] + arr2[arr2.length - 2])    
+    }
+    return arr2;
+}
+
 
 
 
