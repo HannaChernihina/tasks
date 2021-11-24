@@ -23,6 +23,9 @@ return fibonacci(n-1) + fibonacci(n-2)
 }
 fibonacci(5)
 
+
+
+// 1. вывод рядов Фибоначчи от переданного числа:
 // через цикл 
 function fib(num){
         let arr2 = [0, 1]
