@@ -39,6 +39,24 @@ function fib(num){
 }
 
 
+// через рекурсию
+function fibonacci(n, length) {
+    if (n < 2) {
+        return [1];   
+    }
+    if (n < 3) {
+        return [1, 1];
+    }
+
+    let a = fibonacci(n - 1);
+    a.push(a[n - 2] + a[n - 3]);
+    return (a.length === length) 
+            ? a.map(val => console.log(val)) 
+            : a;
+
+};
+
+
 
 
 const fibonacciTwo = (n) =>
