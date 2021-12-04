@@ -5,7 +5,7 @@
 // inBetween(a, b)  betqeen a and b or equel to them (inclusively включительно )
 // inArray([...])  in the given array.
 // arr.filter(inBetween(a, b)) - selects only values between 3 and 6.
-// arr.filter(inArray([1,2,10])) select only elements matching with one of the members of [1, 2, 3]
+// arr.filter(inArray([1, 2, 3])) select only elements matching with one of the members of [1, 2, 3]
 
 
 function inBetween(a, b){
