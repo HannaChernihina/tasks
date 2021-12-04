@@ -18,4 +18,20 @@ function minMax(arr){
 return Math.min(...arr)
 }
 
+// 2. Write function sum that works like this: sum(a)(b) = a + b 
+// замыкание
+function sum(a){
+  return function(b) {return a + b}
+}
+sum(1)(3)
 
+
+// Карринг 
+// создание новых функций на основе уже существующих
+function sum(a, b){ return a + b}
+sum.bind(this, 1)(3)
+
+const sumOfThree = sum.bind(null, 3)
+
+const sumfFoure = sum.bind(null, 4)
+sumfFoure(5)
