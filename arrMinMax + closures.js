@@ -18,6 +18,7 @@ function minMax(arr){
 return Math.min(...arr)
 }
 
+// _______________________________________________________________________________
 // 2. Write function sum that works like this: sum(a)(b) = a + b 
 // замыкание
 function sum(a){
