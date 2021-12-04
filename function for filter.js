@@ -13,3 +13,9 @@ function inBetween(a, b){
 }
 arr.filter(inBetween(2, 5))
 
+
+function inArray(arr){
+   return (item) => arr.indexOf(item) > -1
+}
+arr.filter(inArray([1, 2,5]))
+// [1, 5]
