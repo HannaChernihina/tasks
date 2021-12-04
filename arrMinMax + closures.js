@@ -17,3 +17,5 @@ function min(arr){
 function minMax(arr){
 return Math.min(...arr)
 }
+
+
