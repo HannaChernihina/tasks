@@ -41,3 +41,40 @@ function User(firstName, birthday) {
   })
 }
 // _______________________________________________________________________________________
+
+
+
+function User(fullName){
+
+   this.fullname = fullName;
+        Object.defineProperties(this,{
+            writable: true,
+            configuratable:true,
+
+        firstName:{
+               get(){
+                  return firstName
+                    
+               },
+
+             set(fullname){
+                [firstName] = fullname.split(' ')[0]
+             },
+        },
+    
+        lastName:{
+              get(){
+                return lastName
+               },
+
+             set(fullname){
+               [lastName] = fullName.split(' ')[1]
+             },
+        }
+         
+
+        });
+
+   
+}
+
