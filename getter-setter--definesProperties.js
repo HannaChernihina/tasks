@@ -47,33 +47,38 @@ function User(firstName, birthday) {
 function User(fullName){
 
    this.fullname = fullName;
+
         Object.defineProperties(this,{
-            
+          
 
         firstName:{
-               get(){
-                  return firstName
+
+               get (){
+                return [firstName] = [this.fullname.split(' ')[0]]
+               
                     
                },
 
-             set(fullname){
-                [firstName] = fullname.split(' ')[0]
+             set(firstName){
+                [firstName] = [this.fullname.split(' ')[0]]
              },
         },
+
+
     
         lastName:{
               get(){
-                return lastName
+                return  [lastName] = [this.fullname.split(' ')[1]]
+               
                },
 
-             set(fullname){
-               [lastName] = fullName.split(' ')[1]
+             set(lastName){
+               [lastName] = [this.fullname.split(' ')[1]]
              },
         }
          
 
         });
 
-   
 }
 
