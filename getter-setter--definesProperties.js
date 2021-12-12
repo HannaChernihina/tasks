@@ -52,28 +52,33 @@ function User(fullName){
           
 
         firstName:{
-
+               enumerable: true,
+               configurable: true,
                get (){
-                return [firstName] = [this.fullname.split(' ')[0]]
+               return  this.fullname.split(' ')[0]
                
                     
                },
 
              set(firstName){
-                [firstName] = [this.fullname.split(' ')[0]]
+               let [ , lastNameVal] = this.fullname.split(' ')
+               this.fullname = `${firstName} ${lastNameVal}` 
              },
         },
 
 
     
         lastName:{
-              get(){
-                return  [lastName] = [this.fullname.split(' ')[1]]
+            enumerable: true,
+            configurable: true,
+            get(){
+                return this.fullname.split(' ')[1]
                
                },
 
              set(lastName){
-               [lastName] = [this.fullname.split(' ')[1]]
+               let [firstNameVal] = this.fullname.split(' ')
+                this.fullname = `${firstNameVal} ${lastName}`
              },
         }
          
@@ -81,4 +86,3 @@ function User(fullName){
         });
 
 }
-
