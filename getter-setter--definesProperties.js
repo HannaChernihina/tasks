@@ -48,8 +48,7 @@ function User(fullName){
 
    this.fullname = fullName;
         Object.defineProperties(this,{
-            writable: true,
-            configuratable:true,
+            
 
         firstName:{
                get(){
