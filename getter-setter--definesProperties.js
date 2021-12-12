@@ -86,3 +86,13 @@ function User(fullName){
         });
 
 }
+
+// let j = new User('Hanna Chernihina')
+// j.firstName
+// 'Hanna'
+// j.firstName = 'Hanna2'
+// 'Hanna2'
+// j.firstName
+// 'Hanna2'
+// j.fullname
+// 'Hanna2 Chernihina'
